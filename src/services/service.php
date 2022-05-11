@@ -1,9 +1,10 @@
 <?php
 
-namespace myApp\services;
+namespace MyApp\services;
 
-interface services
+interface Service
 {
-    public function addTicket();
+    public function register();
+    public function serve();
     public function payment();
 }

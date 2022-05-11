@@ -1,8 +1,16 @@
 {
+  "name": "tuan-php/clinic",
+  "description": "Clinic for both human and pets",
+  "authors": [
+    {
+      "name": "Tran Duc Tuan",
+      "email": "ductuan.tran@nfq.asia"
+    }
+  ],
   "autoload":
   {
     "psr-4": {
-      "myApp\\": "src/"
+      "MyApp\\": "src/"
     }
   }
 }

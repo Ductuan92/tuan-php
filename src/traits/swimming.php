@@ -1,6 +1,6 @@
 <?php
 
-namespace myApp\traits;
+namespace MyApp\traits;
 
 trait swimming
 {
