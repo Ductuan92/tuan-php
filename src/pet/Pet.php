@@ -1,12 +1,22 @@
 <?php
 namespace MyApp\pet;
-use MyApp\sevices\Insurance;
 
-abstract class Pet implements Insurance
+class Pet
 {
     private $name;
     private $age;
-    private $owner;
+
+    /**
+     * @param $name
+     * @param $age
+     * @param $owner
+     */
+    public function __construct($name, $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
+
 
     /**
      * @return mixed
@@ -39,22 +49,4 @@ abstract class Pet implements Insurance
     {
         $this->age = $age;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getOwner()
-    {
-        return $this->owner;
-    }
-
-    /**
-     * @param mixed $owner
-     */
-    public function setOwner($owner)
-    {
-        $this->owner = $owner;
-    }
-
-    abstract function setType(string $type);
 }

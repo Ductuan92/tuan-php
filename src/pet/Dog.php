@@ -2,10 +2,10 @@
 
 namespace MyApp\pet;
 
-class Dog extends Pet
+class Dog
 {
     function setType(string $type)
     {
-        $typeService = "Dog service";
+        $typeS = "Dog service";
     }
 }
